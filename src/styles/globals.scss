@@ -1,6 +1,6 @@
-@import 'config/colorsRaw';
-@import 'config/colors';
-@import 'config/fontSizes';
+@use "config/colorsRaw";
+@use "config/colors";
+@use "config/fontSizes";
 
 @tailwind base;
 @tailwind components;
