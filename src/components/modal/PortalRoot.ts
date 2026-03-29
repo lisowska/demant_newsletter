@@ -1,23 +1,27 @@
-import React, { useState, useLayoutEffect } from 'react';
-import { createPortal } from 'react-dom';
+import React, { useState, useLayoutEffect } from "react";
+import { createPortal } from "react-dom";
 
 export type RootPortalProps = {
   wrapperId: string;
   children: React.ReactNode;
 };
 
-
 const createWrapperAndAppendToBody = (wrapperId: string) => {
-  const wrapperElement = document.createElement('div');
+  const wrapperElement = document.createElement("div");
 
-  wrapperElement.setAttribute('id', wrapperId);
+  wrapperElement.setAttribute("id", wrapperId);
   document.body.appendChild(wrapperElement);
 
   return wrapperElement;
 };
 
-export const PortalRoot: React.FC<RootPortalProps> = ({ children, wrapperId }) => {
-  const [wrapperElement, setWrapperElement] = useState<HTMLElement | null>(null);
+export const PortalRoot: React.FunctionComponent<RootPortalProps> = ({
+  children,
+  wrapperId,
+}) => {
+  const [wrapperElement, setWrapperElement] = useState<HTMLElement | null>(
+    null,
+  );
 
   useLayoutEffect(() => {
     let element = document.getElementById(wrapperId);
