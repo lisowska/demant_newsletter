@@ -16,17 +16,21 @@ npm run dev
 
 3. **Open the app**
 
-By default Next starts on [`http://localhost:3000`](http://localhost:3000) – open this URL in your browser.
+By default Next starts on [`https://demant-newsletter.vercel.app/`](https://demant-newsletter.vercel.app/) – open this URL in your browser.
 
 ## Live demo
 
 Replace the link below with your real Vercel deployment URL once the project is connected.
 
-Deployed on Vercel: `https://`
+Deployed on Vercel: `https://your-project.vercel.app`
 
 ## Project summary
 
 A small Next.js page for a newsletter-style signup: a **data preview** on the page, a **modal** with the form, and **toasts** for success and errors. Submitting the form uses a **fake delay** (simulated API) so the UI can show loading and success states without a backend.
+
+## Feedback
+
+In feedback/ folder, I keep the feedback in a .md file for GitHub and a PDF for easier reading offline.
 
 ## UI integration
 
